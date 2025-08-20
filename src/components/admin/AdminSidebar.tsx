@@ -80,9 +80,9 @@ export function AdminSidebar({ userRole }: AdminSidebarProps) {
           )}
         </div>
         
-        {hasChildren && isExpanded && (
+        {hasChildren && isExpanded && item.children && (
           <div className="mt-1 space-y-1">
-            {item.children.map(child => renderNavItem(child, level + 1))}
+            {item.children!.map(child => renderNavItem(child, level + 1))}
           </div>
         )}
       </div>

@@ -124,12 +124,12 @@ export default async function AnalyticsPage() {
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {(() => {
-                const counts: Record<string, number> = {}
+                const serviceCounts: Record<string, number> = {}
                 for (const row of (counts.popularServices ?? [])) {
                   const svc = (row as any).meta?.service || 'unknown'
-                  counts[svc] = (counts[svc] || 0) + 1
+                  serviceCounts[svc] = (serviceCounts[svc] || 0) + 1
                 }
-                const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10)
+                const entries = Object.entries(serviceCounts).sort((a,b)=>b[1]-a[1]).slice(0,10)
                 if (entries.length === 0) return <tr><td className="px-4 py-3 text-sm text-gray-600" colSpan={2}>No data.</td></tr>
                 return entries.map(([svc, count]) => (
                   <tr key={svc}>

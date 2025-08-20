@@ -11,10 +11,11 @@ export default async function CalculatorRatesPage() {
     { cookies: { getAll() { return cookieStore.getAll().map(c => ({ name: c.name, value: c.value })) }, setAll(cs){ cs.forEach(({name,value,options})=>cookieStore.set(name,value,options)) } } }
   )
 
-  const { data: settings = [] } = await supabase
+  const { data: settingsRaw } = await supabase
     .from('calculator_settings')
     .select('id, key, params, disclaimer, updated_at')
     .order('key', { ascending: true })
+  const settings: any[] = (settingsRaw ?? []) as any[]
 
   const ensureKeys = ['loan_repayment', 'borrowing_power']
 

@@ -11,11 +11,12 @@ export default async function NewsListPage() {
     { cookies: { getAll() { return cookieStore.getAll().map(c => ({ name: c.name, value: c.value })) }, setAll(cs){ cs.forEach(({ name, value, options }) => cookieStore.set(name, value, options)) } } }
   )
 
-  const { data: articles = [] } = await supabase
+  const { data: articlesRaw } = await supabase
     .from('articles')
     .select('id, title, slug, status, created_at, published_at')
     .order('created_at', { ascending: false })
     .limit(100)
+  const articles: any[] = (articlesRaw ?? []) as any[]
 
   return (
     <div className="space-y-4">

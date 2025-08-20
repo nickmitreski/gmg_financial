@@ -60,7 +60,7 @@ Citations: after relevant statements, include a markdown reference list at the e
 Return only the MDX content.
 
 Here are optional reference results (use if relevant):
-${serp.map((s, i) => `${i + 1}. ${s.title} - ${s.link} — ${s.snippet}`).join('\n')}`
+${serp.map((s: any, i: number) => `${i + 1}. ${s.title} - ${s.link} — ${s.snippet}`).join('\n')}`
 
     const resp = await fetch('https://api.mistral.ai/v1/chat/completions', {
       method: 'POST',

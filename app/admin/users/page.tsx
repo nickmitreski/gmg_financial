@@ -16,11 +16,12 @@ export default async function UsersPage() {
     }
   )
 
-  const { data: profiles = [] } = await supabase
+  const { data: profilesRaw } = await supabase
     .from('profiles')
     .select('id, email, name, department, role, is_active, created_at')
     .order('created_at', { ascending: false })
     .limit(100)
+  const profiles: any[] = (profilesRaw ?? []) as any[]
 
   return (
     <div className="space-y-4">
