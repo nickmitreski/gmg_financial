@@ -1,0 +1,187 @@
+{
+  "design_system": {
+    "brand_identity": {
+      "name": "Finance Broker Design System",
+      "style": "Professional financial services with coastal lifestyle elements",
+      "target_audience": "Property buyers, investors, business owners, professionals"
+    },
+    "color_palette": {
+      "primary": {
+        "teal": "#7CC5C5",
+        "description": "Primary brand color used for buttons, accents, and key elements"
+      },
+      "neutral": {
+        "white": "#FFFFFF",
+        "light_gray": "#F5F5F5",
+        "medium_gray": "#8A8A8A",
+        "dark_gray": "#333333",
+        "black": "#000000"
+      },
+      "accent": {
+        "blue": "#4A90E2",
+        "description": "Used sparingly for highlights and secondary elements"
+      }
+    },
+    "typography": {
+      "headings": {
+        "font_weight": "300-400",
+        "style": "Clean, modern sans-serif",
+        "hierarchy": {
+          "h1": "Large, impactful hero text",
+          "h2": "Section headers with generous spacing",
+          "h3": "Card titles and subsection headers"
+        }
+      },
+      "body": {
+        "font_weight": "400",
+        "line_height": "1.6",
+        "style": "Readable, professional sans-serif"
+      },
+      "emphasis": {
+        "color": "Teal for key phrases and calls-to-action",
+        "weight": "Medium (500-600) for important information"
+      }
+    },
+    "layout_patterns": {
+      "hero_section": {
+        "structure": "Full-width background image with overlay text",
+        "text_alignment": "Left-aligned with generous left margin",
+        "background": "High-quality aerial/landscape photography",
+        "overlay": "Dark semi-transparent overlay for text readability",
+        "cta_buttons": "Multiple buttons in row format below hero text"
+      },
+      "content_sections": {
+        "spacing": "Generous white space between sections",
+        "max_width": "Contained within reasonable reading width",
+        "alignment": "Center-aligned containers with left-aligned text"
+      },
+      "grid_system": {
+        "cards": "2-3 column grid for featured content",
+        "images": "2x2 or 2x3 grid for gallery-style sections",
+        "responsive": "Stacks to single column on mobile"
+      }
+    },
+    "component_library": {
+      "buttons": {
+        "primary": {
+          "background": "Teal (#7CC5C5)",
+          "text_color": "White",
+          "padding": "12px 24px",
+          "border_radius": "2px",
+          "font_weight": "500",
+          "hover_state": "Slightly darker teal"
+        },
+        "secondary": {
+          "background": "Transparent",
+          "border": "1px solid teal",
+          "text_color": "Teal",
+          "hover_state": "Teal background with white text"
+        },
+        "full_width": {
+          "width": "100%",
+          "used_for": "Call-to-action sections and forms"
+        }
+      },
+      "cards": {
+        "content_cards": {
+          "background": "White",
+          "shadow": "Subtle drop shadow",
+          "border_radius": "4px",
+          "padding": "20px",
+          "hover_state": "Slight elevation increase"
+        },
+        "image_cards": {
+          "structure": "Image + overlay text",
+          "text_position": "Bottom left corner",
+          "overlay": "Dark gradient overlay",
+          "text_color": "White"
+        }
+      },
+      "navigation": {
+        "header": {
+          "background": "Transparent over hero image",
+          "logo_position": "Center",
+          "contact_info": "Top right corner",
+          "menu_style": "Hamburger menu (mobile-first approach)"
+        },
+        "section_navigation": {
+          "style": "Horizontal button row",
+          "background": "Teal for active, white for inactive",
+          "full_width": "Spans container width"
+        }
+      },
+      "forms": {
+        "search_bar": {
+          "style": "Clean input field with search icon button",
+          "width": "Full width of container",
+          "placeholder": "Descriptive placeholder text"
+        },
+        "contact_forms": {
+          "button_style": "Full-width teal buttons",
+          "spacing": "Generous vertical spacing between fields"
+        }
+      }
+    },
+    "imagery_style": {
+      "photography": {
+        "type": "Professional, high-quality aerial and architectural photography",
+        "subjects": [
+          "Coastal landscapes and beach scenes",
+          "Modern residential architecture", 
+          "Urban business environments",
+          "Professional lifestyle shots"
+        ],
+        "treatment": "Natural lighting, high contrast, vibrant colors",
+        "overlay_usage": "Dark overlays for text readability"
+      },
+      "icons": {
+        "style": "Simple, minimal line icons",
+        "color": "Teal or dark gray",
+        "usage": "Sparingly used for key features or navigation"
+      }
+    },
+    "content_structure": {
+      "hero_messaging": {
+        "headline": "Bold, benefit-focused statements",
+        "subheading": "Clear explanation of services",
+        "cta": "Multiple action options (loans, finance, calculators)"
+      },
+      "social_proof": {
+        "testimonials": "Star ratings with review counts",
+        "credentials": "Company name and experience highlighted",
+        "location": "Geographic service area emphasized"
+      },
+      "service_sections": {
+        "specializations": "Visual grid showing service areas",
+        "latest_news": "Three-column layout with 'Read Now' CTAs",
+        "reports": "Downloadable resources with location-specific content"
+      },
+      "about_section": {
+        "personal_branding": "Professional headshot with personal story",
+        "credibility": "Years of experience and client types highlighted",
+        "contact_options": "Multiple ways to get in touch"
+      }
+    },
+    "responsive_behavior": {
+      "mobile_first": "Design prioritizes mobile experience",
+      "breakpoints": {
+        "mobile": "Single column layouts, stacked cards",
+        "tablet": "2-column grids where appropriate", 
+        "desktop": "Full multi-column layouts with sidebars"
+      },
+      "touch_targets": "Buttons sized appropriately for touch interaction"
+    },
+    "accessibility_considerations": {
+      "contrast": "High contrast between text and backgrounds",
+      "navigation": "Clear navigation hierarchy",
+      "alt_text": "Descriptive alternative text for images",
+      "focus_states": "Visible focus indicators for keyboard navigation"
+    },
+    "animation_preferences": {
+      "style": "Subtle, professional animations",
+      "hover_effects": "Gentle color transitions and slight elevations",
+      "loading_states": "Clean, minimal loading indicators",
+      "page_transitions": "Smooth, fast transitions between sections"
+    }
+  }
+}
